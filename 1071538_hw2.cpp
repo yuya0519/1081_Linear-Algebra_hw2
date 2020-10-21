@@ -12,10 +12,8 @@ int main(int argc, char* argv[])
 {
 	ifstream infile1;
 	ifstream infile2;
-	//infile1.open("q4.JSON");
-	//infile2.open("q4.INFO");
-	infile1.open(argv[1]);
-	infile2.open(argv[2]);
+	infile1.open("q4.JSON");
+	infile2.open("q4.INFO");
 	string word;
 	vector<string>bu;
 	vector<string>object;
@@ -118,7 +116,7 @@ int main(int argc, char* argv[])
 	for (int k = 0; k < count; k++) {
 		ans[b][c] += objectNum[b][k] * objectNum[c][k];
 	}
-	cout << ans[b][c] ;
+	cout << ans[b][c]<<endl ;
 	for (int i = 0; i < object.size(); i++)
 		delete[] objectNum[i];
 	delete[] objectNum;
@@ -131,5 +129,4 @@ int main(int argc, char* argv[])
 	buffer.clear();
 	bu.clear();
 	object.clear();
-	return 0;
 }
