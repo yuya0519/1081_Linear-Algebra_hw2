@@ -41,7 +41,7 @@
 #include<cstdlib> //將相關名稱新增至 std 命名空間
 ```
 
-### Global變數說明:
+### 變數說明:
 ```cpp
   	ifstream infile1; //讀檔
 	ifstream infile2; //讀檔
